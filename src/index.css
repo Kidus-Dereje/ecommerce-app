@@ -1,13 +1,152 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@500&family=Montserrat&family=Mukta:wght@500&family=Noto+Sans&family=Oswald&family=Poppins:wght@200;300;400&family=Roboto&display=swap');
+/* Common Style */
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li{
+  list-style-type: none;
+}
+li, button, .logo-section{
+  &:hover{
+    cursor: pointer;
+  }
+}
+span{
+  color: rgb(158, 0, 58)
+}
+/* Header Code */
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding: 5px;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.logo-section{
+  width: 30%;
+  height: 90px;
+  background-image: url(image13.png);
+  background-size: cover;
+}
+.nav-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin-right: 20px;
+}
+.nav-section-one{
+  width: 50%;
+}
+.nav-section-two{
+  width: 35%;
+}
+.nav-section .nav-section-two li{
+  padding: 10px 12px;
+  background-color: rgb(158, 0, 58);
+  color: white;
+}
+.nav-section-two li i{
+  font-size: 20px;
+  margin-right: 5px;
+}
+nav ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-section li{
+  padding: 4px 6px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+/* Main Code */
+.first-section{
+  width: 100%;
+  height: 560px;
+  margin-inline: auto;
+  display: flex;
+  background-color: #dfdfdf;
+  padding: 30px 0px;
+}
+.first-text-section{
+  width: 35%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+.first-text-section h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.first-section-button{
+  margin-top: 100px;
+  background-color: rgb(158, 0, 58);
+  border: none;
+  font-size: 17px;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+}
+.first-grid-images{
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.first-grid-image-one{
+  background-image: url(image1.png);
+  background-size: cover;
+  background-position: 20px;
+}
+.first-grid-image-two{
+  background-image: url(image6.png);
+  background-size: cover;
+  background-position: center;
+}
+.second-section{
+  width: 100%;
+  height: 700px;
+  background-color: rgb(158, 0, 58);
+}
+.second-section-text{
+  height: 350px;
+}
+.second-section-image{
+  height: 350px;
+  background-image: url(image5.jpg);
+  background-size: cover;
+}
+.third-section{
+  width: 100%;
+  height: 1200px;
+  padding: 0 70px;
+}
+.third-section-top, .third-section-bottom{
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.third-section-top-image{
+  background-image: url(image10.jpeg);
+  background-size: cover;
+}
+.third-section-top-text{
+}
+.third-section-bottom-text{
+}
+.third-section-bottom-image{
+  background-image: url(image11.jpg);
+  background-size: cover;
 }
